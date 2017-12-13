@@ -1,6 +1,7 @@
 
 body {
 	font-family: Arial;
+	padding: 20px
 }
 
 
@@ -38,10 +39,22 @@ body {
 	border: none;
 	outline: none;
 	font-size: 16px;
-	background-color: #4CAF50;	
+	background-color: #4CAF50;
+	cursor: pointer;	
 }
 
-/*----login form style-----*/
+/*-------End of Styles for homepage -------*/
+
+/*---- style login page-----*/
+
+.img-logo {
+	text-align: center;
+}
+
+.login-img-logo {
+	border-radius: 50%;
+	width: 30%;
+}
 
 .login-modal {
 	padding: 16px;
@@ -55,27 +68,132 @@ body {
 	width: 100%;
 	padding: 8px 10px;
 	border: 1px solid #ddd;
-	border-radius: 4px;
-	margin-bottom: 12px;
+	box-sizing: border-box;
+	display: inline-block;
+	border-radius: 2px;
+	margin: 8px 0;
 }
 
-.login-form input[type="submit"] {
-	width: 100%;
-	padding: 8px 10px;
+.login {
+	width: 50%;
+	padding: 10px 10px;
 	border: none;
 	outline: none;
+	font-size: 16px;
 	color: white;
-	border-radius: 4px;
 	margin-bottom: 12px;
+	margin-right: px;
 	background-color: #4CAF50;
+	cursor: pointer;
 }
 
-/*----End of login form style-----*/
+.sign-up {
+	width: 100%;
+	padding: 9.5px 173px;
+	border: none;
+	font-size: 16px;
+	outline: none;
+	color: white;
+	margin-bottom: 12px;
+	text-decoration: none;
+	background-color: purple;
+}
+
+.login:hover, 
+.sign-up:hover,
+.cancel:hover {
+	opacity: .8
+}
+
+.modal {
+	position: fixed;
+	 /* sit on top*/
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color:rgba(0, 0, 0, .4);
+	padding-top: 60px;
+}
+
+.login-content {
+	padding: 16px;
+	background-color: #fefefe;
+	margin:5px auto;
+	border: 1px solid #888;
+	width: 60%;
+	border-radius: 5px;
+}
+
+.cancel {
+	padding: 14px 16px;
+	color: white;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	border-radius: 2px;
+	background-color: red;
+}
+
+.forgetpwd {
+	float: right;
+	padding: 16px
+}
+
+/*----End of style for login page-----*/
 
 
-/*-------End of Styles for homepage -------*/
+/*----style for signup page-----*/
+.signup-sign-up {
+	width: 100%;
+	padding: 9.5px 173px;
+	border: none;
+	font-size: 16px;
+	outline: none;
+	color: white;
+	margin-bottom: 12px;
+	text-decoration: none;
+	background-color: purple;
+}
+
+
+/*----End of style for signup page-----*/
+
+
 
 /*------ style for about us page----------- */
+
+.about-main-row {
+	margin-top: 5px;
+	text-align: center;
+	width: 100%;
+}
+
+.col-25 {
+	width: 25%;
+	float: left;
+	border: 1px solid #ddd;
+	padding: 16px;
+	
+
+}
+
+.profile {
+	text-align: center;
+}
+
+.profile-photo {
+	border-radius: 50%;
+	width: 70%;
+}
+
+.col-75 {
+	width: 65%;
+	float:left;
+	border: 1px solid #ddd;
+}
 /*------ End of style for about us page------ */
 
 /*------ style for contact us page----------- */
@@ -87,6 +205,8 @@ body {
 .contact-form {
 	padding: 16px;
 }
+
+
 
 .form-contact input[type="text"], 
 .form-contact input[type="email"] {
@@ -142,3 +262,18 @@ body {
 }
 
 /*------ End of style for blog page------ */
+
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+	from {-webkit-tranform: scale(0)}
+	to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+	from {transform: scale(0)}
+	to {transform: scale(1)}
+}

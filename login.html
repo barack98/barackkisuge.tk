@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div>
+		<div class="navbar-home">
+			<a href="index.html">Home</a>
+			<a href="about.html">About Us</a>
+			<a href="contact.html">Contact Us</a>
+			<a href="blog.html">Blog</a>
+
+			<div class="navbar-home-right">
+				<a onclick="document.getElementById('login').style.display='block'" class="navbar-right">Log In</a>
+			</div>
+
+		</div>
+
+		<div id="login" class="modal">
+				<form class="login-content animate">
+					<div class="img-logo">
+						<img class="login-img-logo" src="images/avatar.png">
+					</div>
+					<div class="login-form">
+						<label>Username:</label>
+						<input type="text" name="" placeholder="Enter Username">
+
+						<label>E-mail:</label>
+						<input type="email" name="" placeholder="Enter E-mail">
+
+						<label>Password:</label>
+						<input type="password" name="" placeholder="Enter Password">
+
+
+						<input type="submit" class="login" name="" value="Log In">
+						<a href="signup.html" class="sign-up" >Sign Up</a>
+						<input type="checkbox" checked="checked">Remember Me<br><br>
+					</div>
+					<div class="login-form" style="background-color: #f1f1f1">
+						<button type="button" onclick="document.getElementById('login').style.display ='none'" class="cancel">Cancel</button>
+						<span class="forgetpwd">Forget <a href="#">Password</a></span>
+					</div>
+				</form>
+		</div>
+
+		
+
+
+		
+	</div>
+
+</body>
+</html>
